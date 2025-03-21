@@ -1,0 +1,249 @@
+#root {
+  background-color: light-dark(
+    var(--mantine-primary-color-0) !important,
+    #292929 !important
+  );
+  scrollbar-color: var(--mantine-primary-color-4) transparent;
+  scrollbar-width: thin;
+}
+#root::-webkit-scrollbar {
+  width: 2px;
+}
+
+#root::-webkit-scrollbar-thumb {
+  background-color: var(--mantine-color-gray-4);
+  border-radius: 1px;
+}
+
+#root::-webkit-scrollbar-track {
+  background-color: var(--mantine-color-gray-2);
+}
+
+:root[data-mantine-color-scheme='dark'] {
+  --mantine-color-text: var(--mantine-color-bright);
+}
+
+/* .mantine-Text-root,
+.mantine-Pill-label {
+  color: var(--mantine-color-text) !important;
+} */
+
+/* Chart Title */
+.highcharts-title {
+  color: var(
+    --mantine-color-text
+  ) !important; /* Set your desired color for the chart title */
+  fill: var(--mantine-color-text) !important;
+}
+
+/* Axis Titles */
+.highcharts-axis-title {
+  color: var(
+    --mantine-color-text
+  ) !important; /* Set your desired color for the axis titles */
+  fill: var(--mantine-color-text) !important;
+}
+
+/* Axis Labels */
+.highcharts-axis-labels text {
+  fill: var(
+    --mantine-color-text
+  ) !important; /* Set your desired color for the axis labels */
+}
+/* Axis Labels */
+.highcharts-legend-item text {
+  fill: var(
+    --mantine-color-text
+  ) !important; /* Set your desired color for the axis labels */
+}
+
+.mantine-Menu-dropdown {
+  max-height: 300px !important;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--mantine-primary-color-4) transparent;
+}
+
+.mrt-table-container {
+  scroll-behavior: smooth !important;
+  scrollbar-width: thin !important;
+}
+.mrt-show-hide-columns-menu {
+  z-index: 3 !important;
+}
+
+.fs-11 {
+  font-size: rem(11.111) !important;
+}
+
+.fs-10 {
+  font-size: rem(13.333) !important;
+}
+
+.fs-9 {
+  font-size: rem(16) !important;
+}
+
+.fs-8 {
+  font-size: rem(19.2) !important;
+}
+
+.fs-7 {
+  font-size: rem(23.04) !important;
+}
+
+.fs-6 {
+  font-size: rem(27.648) !important;
+}
+
+.fs-5 {
+  font-size: rem(33.178) !important;
+}
+
+.fs-4 {
+  font-size: rem(39.813) !important;
+}
+
+.fs-3 {
+  font-size: rem(47.776) !important;
+}
+
+.fs-2 {
+  font-size: rem(57.331) !important;
+}
+
+.fs-1 {
+  font-size: rem(68.797) !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.document-view-modal {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--mantine-primary-color-4) transparent;
+}
+
+#proxy-renderer {
+  flex: 1;
+  width: 100%;
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--mantine-primary-color-4) transparent;
+  background-color: var(--mantine-color-body) !important;
+  color: var(--mantine-color-text) !important;
+  max-height: calc(100dvh - rem(400));
+}
+#proxy-renderer #msdoc-iframe {
+  flex: 1;
+  height: rem(500);
+  width: 100%;
+}
+#react-doc-viewer > #header-bar,
+#react-doc-viewer > #header-bar > #file-name {
+  background-color: var(--mantine-color-body) !important;
+  color: var(--mantine-color-text) !important;
+}
+
+.lucide-icon {
+  width: 1.25em !important;
+  height: 1.25em !important;
+}
+
+.zIndexZero {
+  z-index: 0 !important;
+}
+
+@media (min-width: 1200px) {
+  #root {
+    --mantine-h1-font-size: calc(2.48832rem * var(--mantine-scale));
+    --mantine-h2-font-size: calc(2.0736rem * var(--mantine-scale));
+    --mantine-h3-font-size: calc(1.728rem * var(--mantine-scale));
+    --mantine-h4-font-size: calc(1.44rem * var(--mantine-scale));
+  }
+}
+
+.MRT_TableHeadCell-module_root__6y50a[data-column-pinned],
+.MRT_TableBodyRow-module_root__2c3D4 td[data-column-pinned] {
+  opacity: 1 !important;
+}
+
+.mantine-Container-root {
+  height: 100%;
+}
+
+.reactjs-tiptap-editor,
+.richtext-dialog-content,
+.richtext-bg-background,
+div[data-radix-popper-content-wrapper] {
+  z-index: 999999 !important;
+}
+
+.tiptap.ProseMirror[contenteditable='false'] {
+  pointer-events: none;
+}
+.reactjs-tiptap-editor,
+.richtext-dialog-content,
+.richtext-bg-background {
+  background-color: transparent !important;
+  color: var(--mantine-color-text) !important;
+}
+
+/* .reactjs-tiptap-editor,
+.richtext-dialog-content, */
+div[data-radix-popper-content-wrapper],
+div[data-tippy-root] {
+  background-color: var(--mantine-color-body) !important;
+  color: var(--mantine-color-text) !important;
+}
+
+div[data-radix-popper-content-wrapper] div {
+  max-height: rem(600);
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--mantine-primary-color-4) transparent;
+}
+
+.richtext-outline {
+  outline-style: none !important;
+}
+
+.overflowHidden {
+  overflow: hidden !important;
+}
+.overflowAuto {
+  overflow: auto !important;
+}
+
+.cardHeading {
+  color: var(--mantine-primary-color-8);
+}
+
+/* Badge Styles */
+.badge {
+  --badge-bg: var(--mantine-primary-color-0) !important;
+  border-color: var(--mantine-primary-color-8);
+  --badge-color: var(--mantine-primary-color-8) !important;
+}
+
+.iconWithThemeColor {
+  color: var(--mantine-primary-color-8);
+}
+
+.scrollBarStyles {
+  scroll-behavior: smooth !important;
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--mantine-primary-color-4) transparent;
+}

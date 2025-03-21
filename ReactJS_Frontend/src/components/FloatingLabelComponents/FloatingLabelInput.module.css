@@ -1,0 +1,103 @@
+/* FloatingLabelInput.module.css */
+.root {
+  position: relative;
+  cursor: default;
+}
+
+.label {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  top: calc(var(--input-label-size) / 1.75);
+  left: var(--mantine-spacing-sm);
+  font-weight: 500;
+  pointer-events: none;
+  color: var(--mantine-primary-color-light-color);
+  transition:
+    transform 200ms ease-in-out,
+    color 200ms ease-in-out,
+    font-size 200ms ease-in-out;
+}
+.label[disabled] {
+  color: var(--mantine-color-gray-6) !important;
+}
+.labelFloating {
+  transform: translate(rem(0), rem(-18));
+  font-size: var(--mantine-font-size-xs);
+  background-color: light-dark(
+    var(--mantine-color-white),
+    var(--mantine-color-dark-6)
+  );
+  padding: rem(0) rem(5);
+  border-radius: rem(4);
+}
+
+.labelNotFloating {
+  font-size: var(
+    --mantine-font-size-sm
+  ); /* Regular font size when not floating */
+}
+
+.labelWithLeftSection {
+  /* var(--input-left-section-size) */
+  left: calc(
+    var(--mantine-spacing-sm) + rem(24)
+  ); /* Adjust based on icon size */
+}
+
+.required {
+  transition: opacity 200ms ease-in-out; /* Smooth transition for required indicator */
+}
+
+.requiredVisible {
+  opacity: 1; /* Fully visible when required */
+}
+
+.requiredHidden {
+  opacity: 0; /* Hidden when not required */
+}
+
+.input::placeholder {
+  transition: color 200ms ease-in-out; /* Smooth transition for placeholder */
+}
+
+.inputHiddenWithValue,
+.inputPlaceholderVisible::placeholder {
+  color: transparent; /* Transparent when the input is focused */
+  display: none;
+  visibility: hidden;
+}
+
+/* Adjust for left section icons */
+.inputWithIcon {
+  left: calc(
+    var(--mantine-spacing-sm) + rem(24)
+  ); /* Adjust padding based on icon size */
+}
+.description {
+  position: absolute;
+  z-index: 2;
+  top: rem(30); /* This can be adjusted based on your design */
+  left: var(--mantine-spacing-sm); /* Adjust based on icon size */
+  font-weight: 400;
+  font-size: rem(10);
+  pointer-events: none;
+  color: var(--mantine-primary-color-light-color);
+  transition:
+    transform 200ms ease-in-out,
+    color 200ms ease-in-out,
+    font-size 200ms ease-in-out;
+}
+.descriptionWithLeftSection {
+  left: calc(
+    var(--mantine-spacing-sm) + rem(24)
+  ); /* Adjust based on icon size */
+}
+
+.disabledTagsInput {
+  display: none;
+  visibility: hidden;
+}
+.pills {
+  cursor: default;
+}

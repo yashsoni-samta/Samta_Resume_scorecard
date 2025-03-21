@@ -1,0 +1,15 @@
+.headerCont {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* background-image: linear-gradient(to right, #ff7e5f, #feb47b);  */
+  /* padding: 10px 30px; */
+  border-radius: 10px;
+  /* margin: 0px 0; */
+  /* margin-bottom: 30px; */
+}
+
+.headerTitle {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
