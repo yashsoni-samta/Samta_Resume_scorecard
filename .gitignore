@@ -1,0 +1,30 @@
+# Ignore the myenv directory anywhere in the project
+myenv/
+
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.pyc
+*.pyo
+*.pyd
+.python-version
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local development files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
